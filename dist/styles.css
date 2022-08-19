@@ -829,10 +829,6 @@ h1,
   margin-left: 2rem;
 }
 
-.mt-2 {
-  margin-top: 0.5rem;
-}
-
 .mt-1 {
   margin-top: 0.25rem;
 }
@@ -939,20 +935,12 @@ h1,
   max-width: 100%;
 }
 
-.max-w-md {
-  max-width: 28rem;
-}
-
-.max-w-2xl {
-  max-width: 42rem;
-}
-
-.max-w-4xl {
-  max-width: 56rem;
-}
-
 .max-w-lg {
   max-width: 32rem;
+}
+
+.max-w-md {
+  max-width: 28rem;
 }
 
 .flex-shrink-0 {
@@ -1010,10 +998,6 @@ h1,
 
 .items-start {
   align-items: flex-start;
-}
-
-.items-end {
-  align-items: flex-end;
 }
 
 .items-center {
@@ -1226,21 +1210,6 @@ h1,
   padding-bottom: 3rem;
 }
 
-.px-10 {
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
-}
-
-.px-5 {
-  padding-left: 1.25rem;
-  padding-right: 1.25rem;
-}
-
-.px-12 {
-  padding-left: 3rem;
-  padding-right: 3rem;
-}
-
 .pt-1 {
   padding-top: 0.25rem;
 }
@@ -1307,10 +1276,6 @@ h1,
 
 .pb-4 {
   padding-bottom: 1rem;
-}
-
-.pt-4 {
-  padding-top: 1rem;
 }
 
 .text-left {
@@ -1384,9 +1349,9 @@ h1,
   letter-spacing: -0.025em;
 }
 
-.text-black {
+.text-primary-blue {
   --tw-text-opacity: 1;
-  color: rgb(0 0 0 / var(--tw-text-opacity));
+  color: rgb(48 71 94 / var(--tw-text-opacity));
 }
 
 .text-white {
@@ -1394,14 +1359,14 @@ h1,
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.text-primary-blue {
-  --tw-text-opacity: 1;
-  color: rgb(48 71 94 / var(--tw-text-opacity));
-}
-
 .text-secondary-blue {
   --tw-text-opacity: 1;
   color: rgb(76 108 152 / var(--tw-text-opacity));
+}
+
+.text-black {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
 .text-gray-300 {
@@ -1567,14 +1532,6 @@ h1,
 }
 
 @media (min-width: 640px) {
-  .sm\:col-span-1 {
-    grid-column: span 1 / span 1;
-  }
-
-  .sm\:col-span-2 {
-    grid-column: span 2 / span 2;
-  }
-
   .sm\:mt-6 {
     margin-top: 1.5rem;
   }
@@ -1591,24 +1548,12 @@ h1,
     margin-bottom: 1.25rem;
   }
 
-  .sm\:block {
-    display: block;
-  }
-
-  .sm\:grid {
-    display: grid;
-  }
-
   .sm\:h-10 {
     height: 2.5rem;
   }
 
   .sm\:h-6 {
     height: 1.5rem;
-  }
-
-  .sm\:max-h-2 {
-    max-height: 0.5rem;
   }
 
   .sm\:w-10 {
@@ -1627,24 +1572,8 @@ h1,
     max-width: 42rem;
   }
 
-  .sm\:max-w-7xl {
-    max-width: 80rem;
-  }
-
   .sm\:max-w-3xl {
     max-width: 48rem;
-  }
-
-  .sm\:grid-cols-3 {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-
-  .sm\:flex-row {
-    flex-direction: row;
-  }
-
-  .sm\:gap-14 {
-    gap: 3.5rem;
   }
 
   .sm\:px-6 {
@@ -1655,21 +1584,6 @@ h1,
   .sm\:py-20 {
     padding-top: 5rem;
     padding-bottom: 5rem;
-  }
-
-  .sm\:px-10 {
-    padding-left: 2.5rem;
-    padding-right: 2.5rem;
-  }
-
-  .sm\:px-0 {
-    padding-left: 0px;
-    padding-right: 0px;
-  }
-
-  .sm\:px-20 {
-    padding-left: 5rem;
-    padding-right: 5rem;
   }
 
   .sm\:pb-16 {
@@ -1684,16 +1598,12 @@ h1,
     padding-left: 1.5rem;
   }
 
-  .sm\:pr-12 {
-    padding-right: 3rem;
+  .sm\:pb-0 {
+    padding-bottom: 0px;
   }
 
   .sm\:pb-24 {
     padding-bottom: 6rem;
-  }
-
-  .sm\:pb-0 {
-    padding-bottom: 0px;
   }
 
   .sm\:pb-6 {
@@ -1783,10 +1693,6 @@ h1,
     height: 24rem;
   }
 
-  .md\:max-h-260 {
-    max-height: 65rem;
-  }
-
   .md\:max-h-full {
     max-height: 100%;
   }
@@ -1805,10 +1711,6 @@ h1,
 
   .md\:max-w-full {
     max-width: 100%;
-  }
-
-  .md\:max-w-xl {
-    max-width: 36rem;
   }
 
   .md\:grid-cols-3 {
