@@ -2,7 +2,7 @@
   "name": "sancerra",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "tailwind.config.js",
   "scripts": {
     "build": "npx tailwindcss -i ./src/styles.css -o ./dist/styles.css",
     "dev": "npx tailwindcss -i ./src/styles.css -o ./dist/styles.css --watch",
@@ -11,6 +11,9 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "dependencies": {
+    "alpinejs": "^3.10.2"
+  },
   "devDependencies": {
     "tailwindcss": "^3.1.8"
   }

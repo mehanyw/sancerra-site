@@ -1153,7 +1153,7 @@ h1,
 }
 
 .bg-footer-bg {
-  background-image: url('/src/images/footer-bg.jpg');
+  background-image: url('../src/images/footer-bg.jpg');
 }
 
 .object-cover {

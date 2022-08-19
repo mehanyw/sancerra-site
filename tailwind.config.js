@@ -19,7 +19,7 @@ module.exports = {
         '3': '3px',        
       },
       backgroundImage: {
-        'footer-bg': "url('/src/images/footer-bg.jpg')",
+        'footer-bg': "url('../src/images/footer-bg.jpg')",
       },
       spacing: {
         '128': '32rem',
