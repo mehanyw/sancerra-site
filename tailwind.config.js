@@ -20,8 +20,13 @@ module.exports = {
       },
       backgroundImage: {
         'footer-bg': "url('/src/images/footer-bg.jpg')",
+      },
+      spacing: {
+        '128': '32rem',
+        '160': '40rem',
+        '200': '50rem',
+        '260': '65rem',
       }
-
     },
   },
   plugins: [],
