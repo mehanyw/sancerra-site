@@ -17,6 +17,9 @@ module.exports = {
       },
       borderWidth: {
         '3': '3px',        
+      },
+      backgroundImage: {
+        'footer-bg': "url('/src/images/footer-bg.jpg')",
       }
 
     },
