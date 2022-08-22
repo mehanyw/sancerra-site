@@ -10,21 +10,22 @@
 
     <body>
         <!-- Nav section -->
-        <nav x-data="{ isOpen: false }" class="bg-primary-blue md:bg-white">
+        <nav x-data="{ isOpen: false, scrollAtTop: (window.pageYOffset > 50) ? false : true }" @scroll.window="scrollAtTop = (window.pageYOffset > 50) ? false : true" class="bg-primary-blue md:bg-sc-white sticky top-0 z-50 transition-all" :class="{ 'md:bg-primary-blue' : !scrollAtTop }">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="flex justify-between h-16">
                     <!-- Logo -->
                     <div class="hidden md:flex">
                         <div class="flex-shrink-0 flex items-center">
-                            <a href="/index.html">
-                                <img class="lg:block h-8 w-auto" src="./src/logos/sancerra-logo-blue.svg" alt="Workflow" />
+                            <a href="./index.html">
+                                <img class="h-8 w-auto" :class="scrollAtTop ? '' : 'hidden'" src="./src/logos/sancerra-logo-blue.svg" alt="Sancerra" />
+                                <img class="h-8 w-auto" :class="scrollAtTop ? 'hidden' : ''" src="./src/logos/sancerra-logo-white.svg" alt="Sancerra" />
                             </a>
                         </div>
                     </div>
                     <!-- Mobile logo -->
                     <div class="flex md:hidden">
                         <div class="flex-shrink-0 flex items-center">
-                            <a href="/index.html">
+                            <a href="./index.html">
                                 <img class="lg:block h-8 w-auto" src="./src/logos/sancerra-logo-white.svg" alt="Workflow" />
                             </a>
                         </div>
@@ -34,23 +35,24 @@
                     <div class="flex">
                         <div class="hidden md:ml-6 md:flex md:space-x-8">
                             <div class="inline-flex items-center px-1 pt-1">
-                                <a href="./about.html" class="border-transparent text-primary-blue hover:border-gray-300 border-b-3 text-sm font-medium">About Us</a>
+                                <a href="./about.html" class="border-transparent text-primary-blue hover:border-gray-300 border-b-3 text-sm font-medium tracking-wide" :class="{ 'text-sc-white' : !scrollAtTop }">ABOUT US</a>
                             </div>
                             <div class="inline-flex items-center px-1 pt-1">
-                                <a href="./work.html" class="border-primary-blue text-primary-blue border-b-3 text-sm font-medium">Our Work</a>
+                                <a href="./work.html" class="border-primary-blue text-primary-blue border-b-3 text-sm font-medium tracking-wide" :class="{ 'text-sc-white' : !scrollAtTop, 'border-sc-white' : !scrollAtTop }">OUR WORK</a>
                             </div>
                             <div class="inline-flex items-center px-1 pt-1">
-                                <a href="./contact.html" class="border-transparent text-primary-blue hover:border-gray-300 border-b-3 text-sm font-medium">Contact</a>
+                                <a href="./contact.html" class="border-transparent text-primary-blue hover:border-gray-300 border-b-3 text-sm font-medium tracking-wide" :class="{ 'text-sc-white' : !scrollAtTop }">CONTACT</a>
                             </div>
                             <div class="inline-flex items-center px-1 pt-1">
-                                <a href="./news.html" class="border-transparent text-primary-blue hover:border-gray-300 border-b-3 text-sm font-medium">News</a>
+                                <a href="./news.html" class="border-transparent text-primary-blue hover:border-gray-300 border-b-3 text-sm font-medium tracking-wide" :class="{ 'text-sc-white' : !scrollAtTop }">NEWS</a>
                             </div>
                         </div>
                     </div>
 
                     <!-- Login button -->
                     <div class="hidden md:ml-6 md:flex md:items-center">
-                        <button type="button" class="inline-flex items-center px-4 py-2 border border-transparent text-sm rounded text-white bg-primary-blue hover:bg-opacity-90 focus:bg-opacity-100">Investor Portal</button>
+                        <button type="button" class="inline-flex items-center px-4 py-2 border border-transparent text-sm rounded text-white bg-primary-blue hover:bg-opacity-90 focus:bg-opacity-100" :class="scrollAtTop ? '' : 'hidden'">Investor Portal</button>
+                        <button type="button" class="inline-flex items-center px-4 py-2 border border-transparent text-sm rounded text-primary-blue bg-sc-white hover:bg-opacity-90 focus:bg-opacity-100" :class="scrollAtTop ? 'hidden' : ''">Investor Portal</button>
                     </div>
 
                     <!-- Mobile menu button -->
@@ -58,16 +60,16 @@
                         <button x-on:click="isOpen = !isOpen" type="button" class="inline-flex items-center justify-center p-2 rounded text-white hover:bg-gray-800" aria-controls="mobile-menu" aria-expanded="false">
                             <span class="sr-only">Open main menu</span>
                             <!--
-                                Icon when menu is closed.
-                                Menu open: "hidden", Menu closed: "block"
-                                -->
+                                        Icon when menu is closed.
+                                        Menu open: "hidden", Menu closed: "block"
+                                        -->
                             <svg x-show="!isOpen" class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
                             </svg>
                             <!--
-                                Icon when menu is open.
-                                Menu open: "block", Menu closed: "hidden"
-                                -->
+                                        Icon when menu is open.
+                                        Menu open: "block", Menu closed: "hidden"
+                                        -->
                             <svg x-show="isOpen" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
                             </svg>
@@ -80,10 +82,11 @@
             <div x-show="isOpen" class="md:hidden" id="mobile-menu">
                 <!-- Links -->
                 <div class="pt-2 pb-1 space-y-1">
-                    <a href="./about.html" class="border-transparent text-white hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium">About Us</a>
-                    <a href="./work.html" class="bg-white border-secondary-blue border-opacity-50 text-primary-blue block pl-3 pr-4 py-2 border-l-4 text-base font-medium">Our Work</a>
-                    <a href="./contact.html" class="border-transparent text-white hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium">Contact</a>
-                    <a href="./news.html" class="border-transparent text-white hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium">News</a>
+                    <!-- <a href="./about.html" class="bg-white border-secondary-blue text-primary-blue block pl-3 pr-4 py-2 border-l-4 text-base font-medium">About Us</a> -->
+                    <a href="./about.html" class="border-transparent text-white hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium">ABOUT US</a>
+                    <a href="./work.html" class="bg-white border-secondary-blue border-opacity-50 text-primary-blue block pl-3 pr-4 py-2 border-l-4 text-base font-medium">OUR WORK</a>
+                    <a href="./contact.html" class="border-transparent text-white hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium">CONTACT</a>
+                    <a href="./news.html" class="border-transparent text-white hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium">NEWS</a>
                 </div>
 
                 <!-- Login button -->
