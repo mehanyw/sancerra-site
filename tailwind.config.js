@@ -10,6 +10,7 @@ module.exports = {
         'sc-black': '#222222',
         'sc-white': '#FFFFFF',
         'sc-slate-gray': '#6C7987',
+        'sc-gold': '#EfE9DB',
       },
       fontSize: {
         '3.5xl': ['2rem', '2.5rem'],
@@ -22,6 +23,8 @@ module.exports = {
         'footer-bg': "url('../src/images/footer-bg.jpg')",
       },
       spacing: {
+        '18': '4.5rem',
+        '20': '5rem',
         '128': '32rem',
         '160': '40rem',
         '200': '50rem',
@@ -29,5 +32,7 @@ module.exports = {
       }
     },
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/aspect-ratio'),
+  ],
 }
