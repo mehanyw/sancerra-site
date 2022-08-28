@@ -29,6 +29,9 @@ module.exports = {
         '160': '40rem',
         '200': '50rem',
         '260': '65rem',
+      },
+      screens: {
+        '1.5xl': {'max': '39rem'},
       }
     },
   },

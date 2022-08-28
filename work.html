@@ -50,10 +50,13 @@
                         </div>
                     </div>
 
-                    <!-- Login button -->
                     <div class="hidden md:ml-6 md:flex md:items-center">
-                        <button type="button" class="inline-flex items-center px-4 py-2 border border-transparent text-sm rounded text-white bg-primary-blue hover:bg-opacity-90 focus:bg-opacity-100" :class="scrollAtTop ? '' : 'hidden'">Investor Portal</button>
-                        <button type="button" class="inline-flex items-center px-4 py-2 border border-transparent text-sm rounded text-primary-blue bg-sc-white hover:bg-opacity-90 focus:bg-opacity-100" :class="scrollAtTop ? 'hidden' : ''">Investor Portal</button>
+                        <form action="https://investors.sancerra.com/login">
+                            <button type="submit" class="inline-flex items-center px-4 py-2 border border-transparent text-sm rounded text-white bg-primary-blue hover:bg-opacity-90 focus:bg-opacity-100" :class="scrollAtTop ? '' : 'hidden'">Investor Portal</button>
+                        </form>
+                        <form action="https://investors.sancerra.com/login">
+                            <button type="submit" class="inline-flex items-center px-4 py-2 border border-transparent text-sm rounded text-primary-blue bg-sc-white hover:bg-opacity-90 focus:bg-opacity-100" :class="scrollAtTop ? 'hidden' : ''">Investor Portal</button>
+                        </form>
                     </div>
 
                     <!-- Mobile menu button -->
@@ -124,13 +127,7 @@
             <div class="bg-secondary-bg">
                 <div class="max-w-7xl mx-auto py-12 px-8 sm:px-6 sm:max-w-xl md:max-w-3xl lg:px-8 text-center">
                     <h1 class="text-center mt-4 text-3xl text-primary-blue sm:mt-5 sm:text-5xl lg:mt-6 xl:text-5xl">A crisis <span class="text-secondary-blue">requires</span> more.</h1>
-                    <p class="text-center mt-4 text-base text-primary-blue font-light tracking-wide sm:text-xl lg:text-lg xl:text-xl">
-                        Unique community, fiscal, political, and environmental challenges cause communities to fall short of homebuilding goals.
-                        <br />
-                        This compounds problems of affordability, inequality, and underfunded services.
-                        <br />
-                        We believe meaningful change to the housing landscape is possible, but solving these problems requires a willingness to lead with integrity, thoughtfulness, and teamwork.
-                    </p>
+                    <p class="text-center mt-4 text-base text-primary-blue font-light tracking-wide sm:text-xl lg:text-lg xl:text-xl">Unique community, fiscal, political, and environmental challenges cause communities to fall short of homebuilding goals. This compounds problems of affordability, inequality, and underfunded services. We believe meaningful change to the housing landscape is possible, but solving these problems requires a willingness to lead with integrity, thoughtfulness, and teamwork.</p>
                 </div>
             </div>
         </section>
@@ -151,7 +148,7 @@
                                 </div>
                                 <!-- End mobile view -->
 
-                                <p class="mt-4 text-lg text-sc-black">We sponsor sustainable development of high-quality for sale and rental housing in partnership with the residents and communities we serve.</p>
+                                <p class="mt-4 text-lg text-sc-black font-light">We sponsor sustainable development of high-quality for sale and rental housing in partnership with the residents and communities we serve.</p>
                             </div>
                         </div>
                         <!-- Desktop image -->
@@ -176,7 +173,7 @@
                                 </div>
                                 <!-- End mobile view -->
 
-                                <p class="mt-4 text-lg text-sc-black">We provide access to high-quality investment opportunities to a range of high net worth individuals, family offices, and institutional clients.</p>
+                                <p class="mt-4 text-lg text-sc-black font-light">We provide access to high-quality investment opportunities to a range of high net worth individuals, family offices, and institutional clients.</p>
                             </div>
                         </div>
 
@@ -202,7 +199,7 @@
                                 </div>
                                 <!-- End mobile view -->
 
-                                <p class="mt-4 text-lg text-sc-black">We offer entitlement, capital advisory, and development services to property owners pursuing their own sustainable development solutions.</p>
+                                <p class="mt-4 text-lg text-sc-black font-light">We offer entitlement, capital advisory, and development services to property owners pursuing their own sustainable development solutions.</p>
                             </div>
                         </div>
                         <!-- Desktop image -->
@@ -230,11 +227,11 @@
                             <div>
                                 <h3 class="text-base font-medium text-white">COMPANY</h3>
                                 <ul role="list" class="mt-4 space-y-2">
-                                    <li><a href="./index.html" class="text-base text-gray-300 hover:text-white">Home</a></li>
-                                    <li><a href="./about.html" class="text-base text-gray-300 hover:text-white">About Us</a></li>
-                                    <li><a href="./work.html" class="text-base text-gray-300 hover:text-white">Our Work</a></li>
-                                    <li><a href="./contact.html" class="text-base text-gray-300 hover:text-white">Contact</a></li>
-                                    <li><a href="./news.html" class="text-base text-gray-300 hover:text-white">News</a></li>
+                                    <li><a href="./index.html" class="text-base text-gray-300 hover:text-sc-white">Home</a></li>
+                                    <li><a href="./about.html" class="text-base text-gray-300 hover:text-sc-white">About Us</a></li>
+                                    <li><a href="./work.html" class="text-base text-gray-300 hover:text-sc-white">Our Work</a></li>
+                                    <li><a href="./contact.html" class="text-base text-gray-300 hover:text-sc-white">Contact</a></li>
+                                    <li><a href="./news.html" class="text-base text-gray-300 hover:text-sc-white">News</a></li>
                                     <li>
                                         <!-- Portal login button -->
                                         <button type="button" class="inline-flex items-center px-4 py-2 border border-transparent text-sm rounded text-primary-blue bg-white hover:bg-opacity-90 focus:bg-opacity-100">
@@ -268,15 +265,13 @@
                                             </a>
                                         </div>
                                     </li>
-                                    <li><a href="#" class="text-base text-gray-300">contact@sancerra.com</a></li>
-                                    <li>
-                                        <a href="#" class="text-base text-gray-300">
-                                            240 Newport Center Dr Suite 200,
-                                            <br />
-                                            Newport Beach, CA 92660
-                                        </a>
+                                    <li class="text-base text-gray-300">contact@sancerra.com</li>
+                                    <li class="text-base text-gray-300">
+                                        240 Newport Center Dr Suite 200,
+                                        <br />
+                                        Newport Beach, CA 92660
                                     </li>
-                                    <li><a href="#" class="text-base text-gray-300">+1 000 000 0000</a></li>
+                                    <li class="text-base text-gray-300">+1 000 000 0000</li>
                                 </ul>
                             </div>
                         </div>
@@ -287,18 +282,18 @@
                                     <p class="text-sm text-gray-400">
                                         <time datetime="2020-03-16">Dec 13, 2021</time>
                                     </p>
-                                    <a href="https://therealdeal.com/la/2021/12/13/build-for-rent-community-envisioned-in-inland-empire/" class="mt-2 block">
-                                        <p class="text-xl md:text-2xl font-medium text-sc-white">Wildomar location featured in The Real Deal</p>
-                                        <p class="mt-1 text-base text-gray-200">Build-For-Rent Community Envisioned in Inland Empire (Subscription required).</p>
+                                    <a href="https://therealdeal.com/la/2021/12/13/build-for-rent-community-envisioned-in-inland-empire/" class="mt-2 block text-gray-300 hover:text-sc-white">
+                                        <p class="text-xl md:text-2xl font-medium">Wildomar location featured in The Real Deal</p>
+                                        <p class="mt-1 text-base">Build-For-Rent Community Envisioned in Inland Empire (Subscription required).</p>
                                     </a>
                                 </div>
                                 <div class="mt-6">
                                     <p class="text-sm text-gray-400">
-                                        <time datetime="2020-03-16">Dec 13, 2021</time>
+                                        <time datetime="2020-03-16">Dec 10, 2021</time>
                                     </p>
-                                    <a href="https://www.builderonline.com/land/development/california-developer-sancerra-communities-launches-its-build-to-rent-platform_o" class="mt-2 block">
-                                        <p class="text-xl md:text-2xl font-medium text-sc-white">Sancerra featured in Builder Online</p>
-                                        <p class="mt-1 text-base text-gray-200">California Developer Sancerra Communities Launches Its Build-to-Rent Platform.</p>
+                                    <a href="https://www.builderonline.com/land/development/california-developer-sancerra-communities-launches-its-build-to-rent-platform_o" class="mt-2 block text-gray-300 hover:text-sc-white">
+                                        <p class="text-xl md:text-2xl font-medium">Sancerra featured in Builder Online</p>
+                                        <p class="mt-1 text-base">California Developer Sancerra Communities Launches Its Build-to-Rent Platform.</p>
                                     </a>
                                 </div>
                             </div>

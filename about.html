@@ -50,10 +50,13 @@
                         </div>
                     </div>
 
-                    <!-- Login button -->
                     <div class="hidden md:ml-6 md:flex md:items-center">
-                        <button type="button" class="inline-flex items-center px-4 py-2 border border-transparent text-sm rounded text-white bg-primary-blue hover:bg-opacity-90 focus:bg-opacity-100" :class="scrollAtTop ? '' : 'hidden'">Investor Portal</button>
-                        <button type="button" class="inline-flex items-center px-4 py-2 border border-transparent text-sm rounded text-primary-blue bg-sc-white hover:bg-opacity-90 focus:bg-opacity-100" :class="scrollAtTop ? 'hidden' : ''">Investor Portal</button>
+                        <form action="https://investors.sancerra.com/login">
+                            <button type="submit" class="inline-flex items-center px-4 py-2 border border-transparent text-sm rounded text-white bg-primary-blue hover:bg-opacity-90 focus:bg-opacity-100" :class="scrollAtTop ? '' : 'hidden'">Investor Portal</button>
+                        </form>
+                        <form action="https://investors.sancerra.com/login">
+                            <button type="submit" class="inline-flex items-center px-4 py-2 border border-transparent text-sm rounded text-primary-blue bg-sc-white hover:bg-opacity-90 focus:bg-opacity-100" :class="scrollAtTop ? 'hidden' : ''">Investor Portal</button>
+                        </form>
                     </div>
 
                     <!-- Mobile menu button -->
@@ -144,7 +147,7 @@
                                 </div>
                                 <!-- End mobile view -->
 
-                                <p class="mt-4 text-lg text-sc-black">At Sancerra, we don’t just build houses, we build homes. We don’t just build developments, we build community. We transform land into productive, sustainable, and engaging spaces.</p>
+                                <p class="mt-4 text-lg text-sc-black font-light">At Sancerra, we don’t just build houses, we build homes. We don’t just build developments, we build community. We transform land into productive, sustainable, and engaging spaces.</p>
                             </div>
                         </div>
                         <!-- Desktop image -->
@@ -169,7 +172,7 @@
                                 </div>
                                 <!-- End mobile view -->
 
-                                <p class="mt-4 text-lg text-sc-black">Through honest, collaborative, and sustainable development, we partner with communities and investors to reimagine the housing landscape.</p>
+                                <p class="mt-4 text-lg text-sc-black font-light">Through honest, collaborative, and sustainable development, we partner with communities and investors to reimagine the housing landscape.</p>
                             </div>
                         </div>
 
@@ -199,7 +202,7 @@
                             <li>
                                 <div class="space-y-4 sm:grid sm:grid-cols-3 sm:gap-6 sm:space-y-0 lg:gap-8">
                                     <div class="h-0 aspect-w-3 aspect-h-2 sm:aspect-w-3 sm:aspect-h-4">
-                                        <img class="object-cover shadow rounded-lg" src="./src/images/portrait.jpeg" alt="" />
+                                        <img class="object-cover shadow rounded" src="./src/images/team/jim-portrait.svg" alt="Jim" />
                                     </div>
                                     <div class="sm:col-span-2">
                                         <div class="space-y-4">
@@ -217,7 +220,7 @@
                             <li>
                                 <div class="space-y-4 sm:grid sm:grid-cols-3 sm:gap-6 sm:space-y-0 lg:gap-8">
                                     <div class="h-0 aspect-w-3 aspect-h-2 sm:aspect-w-3 sm:aspect-h-4">
-                                        <img class="object-cover shadow rounded-lg" src="./src/images/portrait.jpeg" alt="" />
+                                        <img class="object-cover shadow rounded" src="./src/images/team/marcus-portrait.svg" alt="marcus" />
                                     </div>
                                     <div class="sm:col-span-2">
                                         <div class="space-y-4">
@@ -235,7 +238,7 @@
                             <li>
                                 <div class="space-y-4 sm:grid sm:grid-cols-3 sm:gap-6 sm:space-y-0 lg:gap-8">
                                     <div class="h-0 aspect-w-3 aspect-h-2 sm:aspect-w-3 sm:aspect-h-4">
-                                        <img class="object-cover shadow rounded-lg" src="./src/images/portrait.jpeg" alt="" />
+                                        <img class="object-cover shadow rounded" src="./src/images/team/mike-portrait.svg" alt="Mike" />
                                     </div>
                                     <div class="sm:col-span-2">
                                         <div class="space-y-4">
@@ -253,7 +256,7 @@
                             <li>
                                 <div class="space-y-4 sm:grid sm:grid-cols-3 sm:gap-6 sm:space-y-0 lg:gap-8">
                                     <div class="h-0 aspect-w-3 aspect-h-2 sm:aspect-w-3 sm:aspect-h-4">
-                                        <img class="object-cover shadow rounded-lg" src="./src/images/portrait.jpeg" alt="" />
+                                        <img class="object-cover shadow rounded" src="./src/images/team/adam-portrait.svg" alt="Adam" />
                                     </div>
                                     <div class="sm:col-span-2">
                                         <div class="space-y-4">
@@ -352,11 +355,11 @@
                             <div>
                                 <h3 class="text-base font-medium text-white">COMPANY</h3>
                                 <ul role="list" class="mt-4 space-y-2">
-                                    <li><a href="./index.html" class="text-base text-gray-300 hover:text-white">Home</a></li>
-                                    <li><a href="./about.html" class="text-base text-gray-300 hover:text-white">About Us</a></li>
-                                    <li><a href="./work.html" class="text-base text-gray-300 hover:text-white">Our Work</a></li>
-                                    <li><a href="./contact.html" class="text-base text-gray-300 hover:text-white">Contact</a></li>
-                                    <li><a href="./news.html" class="text-base text-gray-300 hover:text-white">News</a></li>
+                                    <li><a href="./index.html" class="text-base text-gray-300 hover:text-sc-white">Home</a></li>
+                                    <li><a href="./about.html" class="text-base text-gray-300 hover:text-sc-white">About Us</a></li>
+                                    <li><a href="./work.html" class="text-base text-gray-300 hover:text-sc-white">Our Work</a></li>
+                                    <li><a href="./contact.html" class="text-base text-gray-300 hover:text-sc-white">Contact</a></li>
+                                    <li><a href="./news.html" class="text-base text-gray-300 hover:text-sc-white">News</a></li>
                                     <li>
                                         <!-- Portal login button -->
                                         <button type="button" class="inline-flex items-center px-4 py-2 border border-transparent text-sm rounded text-primary-blue bg-white hover:bg-opacity-90 focus:bg-opacity-100">
@@ -390,15 +393,13 @@
                                             </a>
                                         </div>
                                     </li>
-                                    <li><a href="#" class="text-base text-gray-300">contact@sancerra.com</a></li>
-                                    <li>
-                                        <a href="#" class="text-base text-gray-300">
-                                            240 Newport Center Dr Suite 200,
-                                            <br />
-                                            Newport Beach, CA 92660
-                                        </a>
+                                    <li class="text-base text-gray-300">contact@sancerra.com</li>
+                                    <li class="text-base text-gray-300">
+                                        240 Newport Center Dr Suite 200,
+                                        <br />
+                                        Newport Beach, CA 92660
                                     </li>
-                                    <li><a href="#" class="text-base text-gray-300">+1 000 000 0000</a></li>
+                                    <li class="text-base text-gray-300">+1 000 000 0000</li>
                                 </ul>
                             </div>
                         </div>
@@ -409,18 +410,18 @@
                                     <p class="text-sm text-gray-400">
                                         <time datetime="2020-03-16">Dec 13, 2021</time>
                                     </p>
-                                    <a href="https://therealdeal.com/la/2021/12/13/build-for-rent-community-envisioned-in-inland-empire/" class="mt-2 block">
-                                        <p class="text-xl md:text-2xl font-medium text-sc-white">Wildomar location featured in The Real Deal</p>
-                                        <p class="mt-1 text-base text-gray-200">Build-For-Rent Community Envisioned in Inland Empire (Subscription required).</p>
+                                    <a href="https://therealdeal.com/la/2021/12/13/build-for-rent-community-envisioned-in-inland-empire/" class="mt-2 block text-gray-300 hover:text-sc-white">
+                                        <p class="text-xl md:text-2xl font-medium">Wildomar location featured in The Real Deal</p>
+                                        <p class="mt-1 text-base">Build-For-Rent Community Envisioned in Inland Empire (Subscription required).</p>
                                     </a>
                                 </div>
                                 <div class="mt-6">
                                     <p class="text-sm text-gray-400">
-                                        <time datetime="2020-03-16">Dec 13, 2021</time>
+                                        <time datetime="2020-03-16">Dec 10, 2021</time>
                                     </p>
-                                    <a href="https://www.builderonline.com/land/development/california-developer-sancerra-communities-launches-its-build-to-rent-platform_o" class="mt-2 block">
-                                        <p class="text-xl md:text-2xl font-medium text-sc-white">Sancerra featured in Builder Online</p>
-                                        <p class="mt-1 text-base text-gray-200">California Developer Sancerra Communities Launches Its Build-to-Rent Platform.</p>
+                                    <a href="https://www.builderonline.com/land/development/california-developer-sancerra-communities-launches-its-build-to-rent-platform_o" class="mt-2 block text-gray-300 hover:text-sc-white">
+                                        <p class="text-xl md:text-2xl font-medium">Sancerra featured in Builder Online</p>
+                                        <p class="mt-1 text-base">California Developer Sancerra Communities Launches Its Build-to-Rent Platform.</p>
                                     </a>
                                 </div>
                             </div>
