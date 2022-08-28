@@ -1925,10 +1925,6 @@ h1,
     height: auto;
   }
 
-  .lg\:max-h-160 {
-    max-height: 40rem;
-  }
-
   .lg\:max-h-128 {
     max-height: 32rem;
   }
