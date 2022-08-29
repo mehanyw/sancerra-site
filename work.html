@@ -6,6 +6,7 @@
         <title>Sancerra | Our Work</title>
         <link rel="icon" type="image/x-icon" href="./favicon.ico" />
         <link href="./dist/styles.css" rel="stylesheet" />
+        <script src="./src/script.js"></script>
         <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
     </head>
 
@@ -227,9 +228,9 @@
             <!-- TODO: bg -->
             <div class="w-full min-w-full h-auto py-3 bg-sc-gold">
                 <!-- max-w-7xl mx-auto py-12 px-8 sm:px-6 sm:max-w-xl md:max-w-3xl lg:px-8 text-center -->
-                <div class="carousel-container relative py-3 my-3 lg:py-6 lg:mt-9 lg:mb-12 lg:max-w-5xl mx-auto overflow-hidden flex flex-col lg:gap-20">
+                <div class="relative py-3 my-3 lg:py-6 lg:mt-9 lg:mb-12 lg:max-w-5xl mx-auto overflow-x-auto flex flex-col lg:gap-20" x-data="{ item: 1 }">
                     <!-- Slide 1 -->
-                    <div class="my-8 lg:my-16 carousel-item" :class="{ 'active': item === 1 }">
+                    <div class="my-8 lg:my-16 carousel-item" x-show="item === 1">
                         <div class="lg:mx-auto lg:max-w-7xl lg:px-12 lg:grid lg:grid-cols-2 lg:grid-flow-col-dense lg:gap-24">
                             <div class="px-4 max-w-xl mx-auto sm:px-6 lg:max-w-none lg:mx-0 lg:px-0 lg:col-start-1">
                                 <div>
@@ -255,7 +256,7 @@
                     </div>
 
                     <!-- Slide 2 -->
-                    <div class="my-8 lg:my-16 carousel-item" :class="{ 'active': item === 1 }">
+                    <div class="my-8 lg:my-16 carousel-item" x-show="item === 2">
                         <div class="lg:mx-auto lg:max-w-7xl lg:px-12 lg:grid lg:grid-cols-2 lg:grid-flow-col-dense lg:gap-24">
                             <div class="px-4 max-w-xl mx-auto sm:px-6 lg:max-w-none lg:mx-0 lg:px-0 lg:col-start-1">
                                 <div>
@@ -281,7 +282,7 @@
                     </div>
 
                     <!-- Slide 3 -->
-                    <div class="my-8 lg:my-16 carousel-item" :class="{ 'active': item === 1 }">
+                    <div class="my-8 lg:my-16 carousel-item" x-show="item === 3">
                         <div class="lg:mx-auto lg:max-w-7xl lg:px-12 lg:grid lg:grid-cols-2 lg:grid-flow-col-dense lg:gap-24">
                             <div class="px-4 max-w-xl mx-auto sm:px-6 lg:max-w-none lg:mx-0 lg:px-0 lg:col-start-1">
                                 <div>
@@ -306,23 +307,12 @@
                         </div>
                     </div>
 
-                    <div class="controls">
-                        <button @click="item = item === 1 ? 3 : item - 1">&#8592;</button>
-                        <button @click="item = item === 3 ? 1 : item + 1">&#8594;</button>
+                    <div class="flex justify-between w-full">
+                        <button x-on:click="item = item === 1 ? 3 : item - 1">&#8592;</button>
+                        <button x-on:click="item = item === 3 ? 1 : item + 1" x-init="function carouselTimeOut() { setTimeout(() => {item = item === 3 ? 1 : item + 1; carouselTimeOut(item); }, 3000); }">&#8594;</button>
                     </div>
                 </div>
             </div>
-
-            <!-- TODO: Add the styles: https://codepen.io/georgejustin22/pen/zYrxoBY?css-preprocessor=less -->
-            <!-- <div class="carousel-container" x-data="{ item: 1 }">
-                <div class="carousel-item" :class="{ 'active': item === 1 }">Card 1</div>
-                <div class="carousel-item" :class="{ 'active': item === 2 }">Card 2</div>
-                <div class="carousel-item" :class="{ 'active': item === 3 }">Card 3</div>
-                <div class="controls">
-                    <button @click="item = item === 1 ? 3 : item - 1">&#8592;</button>
-                    <button @click="item = item === 3 ? 1 : item + 1">&#8594;</button>
-                </div>
-            </div> -->
         </section>
 
         <!-- Footer section -->
