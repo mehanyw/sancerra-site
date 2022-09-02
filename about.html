@@ -404,7 +404,7 @@
                     <div class="relative py-3 my-3 lg:py-6 lg:mt-9 lg:mb-12 lg:max-w-5xl mx-auto overflow-x-auto flex flex-col lg:gap-20" x-data="{ item: 1 }">
                         <!-- Slide 1 -->
                         <div x-show="item === 1">
-                            <div class="mt-6 grid grid-cols-2 gap-0.5 md:grid-cols-3 lg:grid-cols-4 lg:mt-8">
+                            <div class="mt-6 px-8 grid grid-cols-2 gap-0.5 md:grid-cols-3 lg:grid-cols-4 lg:mt-8">
                                 <div class="col-span-1 flex justify-center py-8 px-auto bg-gray-50">
                                     <img class="max-h-12" src="./src/images/partner-logos/lennar-logo.jpeg" alt="Lennar" />
                                 </div>
@@ -422,7 +422,7 @@
 
                         <!-- Slide 2 -->
                         <div x-show="item === 2">
-                            <div class="mt-6 grid grid-cols-2 gap-0.5 md:grid-cols-3 lg:grid-cols-4 lg:mt-8">
+                            <div class="mt-6 px-8 grid grid-cols-2 gap-0.5 md:grid-cols-3 lg:grid-cols-4 lg:mt-8">
                                 <div class="col-span-1 flex justify-center py-8 px-auto bg-gray-50">
                                     <img class="max-h-12" src="/src/images/partner-logos/cathay-bank-logo.png" alt="Cathay Bank" />
                                 </div>
@@ -440,7 +440,7 @@
 
                         <!-- Slide 3 -->
                         <div x-show="item === 3">
-                            <div class="mt-6 grid grid-cols-2 gap-0.5 md:grid-cols-3 lg:grid-cols-4 lg:mt-8">
+                            <div class="mt-6 px-8 grid grid-cols-2 gap-0.5 md:grid-cols-3 lg:grid-cols-4 lg:mt-8">
                                 <div class="col-span-1 flex justify-center py-8 px-auto bg-gray-50">
                                     <img class="max-h-12" src="./src/images/partner-logos/sares-regis-group.jpeg" alt="Sares Regis Group" />
                                 </div>
@@ -458,7 +458,7 @@
 
                         <!-- Slide 4 -->
                         <div x-show="item === 4">
-                            <div class="mt-6 grid grid-cols-2 gap-0.5 md:grid-cols-3 lg:grid-cols-4 lg:mt-8">
+                            <div class="mt-6 px-8 grid grid-cols-2 gap-0.5 md:grid-cols-3 lg:grid-cols-4 lg:mt-8">
                                 <div class="col-span-1 flex justify-center py-8 px-auto bg-gray-50">
                                     <img class="max-h-12" src="./src/images/partner-logos/new-home-logo.png" alt="The New Home Company" />
                                 </div>
@@ -476,7 +476,7 @@
 
                         <!-- Slide 5 -->
                         <div x-show="item === 5">
-                            <div class="mt-6 grid grid-cols-2 gap-0.5 md:grid-cols-3 lg:grid-cols-4 lg:mt-8">
+                            <div class="mt-6 px-8 grid grid-cols-2 gap-0.5 md:grid-cols-3 lg:grid-cols-4 lg:mt-8">
                                 <div class="col-span-1 flex justify-center py-8 px-auto bg-gray-50">
                                     <img class="max-h-12" src="./src/images/partner-logos/arrimus-logo.png" alt="Arrimus" />
                                 </div>
@@ -486,9 +486,17 @@
                             </div>
                         </div>
 
-                        <div class="flex justify-between w-full">
-                            <button x-on:click="item = item === 1 ? 5 : item - 1">&#8592;</button>
-                            <button x-on:click="item = item === 5 ? 1 : item + 1" x-init="function carouselTimeOut() { setTimeout(() => {item = item === 5 ? 1 : item + 1; carouselTimeOut(item); }, 8000); }">&#8594;</button>
+                        <div class="flex justify-between w-full absolute top-1/2">
+                            <button>
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-primary-blue opacity-80 hover:opacity-100 hover:scale-110 cursor-pointer transition-all" x-on:click="item = item === 1 ? 5 : item - 1">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+                                </svg>
+                            </button>
+                            <button>
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-primary-blue opacity-80 hover:opacity-100 hover:scale-110 cursor-pointer transition-all" x-on:click="item = item === 5 ? 1 : item + 1" x-init="function carouselTimeOut() { setTimeout(() => {item = item === 5 ? 1 : item + 1; carouselTimeOut(item); }, 8000); }">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                                </svg>
+                            </button>
                         </div>
                     </div>
                 </div>
