@@ -1269,6 +1269,11 @@ h1,
   padding-bottom: 0px;
 }
 
+.py-5 {
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+
 .pt-16 {
   padding-top: 4rem;
 }
@@ -1339,6 +1344,10 @@ h1,
 
 .pt-10 {
   padding-top: 2.5rem;
+}
+
+.pb-0 {
+  padding-bottom: 0px;
 }
 
 .text-left {
@@ -1622,6 +1631,10 @@ h1,
     margin-left: 0.75rem;
   }
 
+  .sm\:mt-2 {
+    margin-top: 0.5rem;
+  }
+
   .sm\:inline-flex {
     display: inline-flex;
   }
@@ -1688,6 +1701,10 @@ h1,
 
   .sm\:pl-6 {
     padding-left: 1.5rem;
+  }
+
+  .sm\:pb-0 {
+    padding-bottom: 0px;
   }
 
   .sm\:text-center {
