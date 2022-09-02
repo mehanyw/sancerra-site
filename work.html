@@ -6,7 +6,6 @@
         <title>Sancerra | Our Work</title>
         <link rel="icon" type="image/x-icon" href="./favicon.ico" />
         <link href="./dist/styles.css" rel="stylesheet" />
-        <script src="./src/script.js"></script>
         <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
     </head>
 
@@ -312,7 +311,7 @@
 
                     <div class="flex justify-between w-full">
                         <button x-on:click="item = item === 1 ? 3 : item - 1">&#8592;</button>
-                        <button x-on:click="item = item === 3 ? 1 : item + 1" x-init="function carouselTimeOut() { setTimeout(() => {item = item === 3 ? 1 : item + 1; carouselTimeOut(item); }, 3000); }">&#8594;</button>
+                        <button x-on:click="item = item === 3 ? 1 : item + 1" x-init="function carouselTimeOut() { setTimeout(() => {item = item === 3 ? 1 : item + 1; carouselTimeOut(item); }, 8000); }">&#8594;</button>
                     </div>
                 </div>
             </div>
