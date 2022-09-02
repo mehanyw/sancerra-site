@@ -6,12 +6,15 @@
         <title>Sancerra | News</title>
         <link rel="icon" type="image/x-icon" href="./favicon.ico" />
         <link href="./dist/styles.css" rel="stylesheet" />
+        <!-- Alpine Plugins -->
+        <script defer src="https://unpkg.com/@alpinejs/intersect@3.x.x/dist/cdn.min.js"></script>
+        <!-- Alpine Core -->
         <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
     </head>
 
-    <body>
+    <body x-data>
         <!-- Nav section -->
-        <nav x-data="{ isOpen: false, scrollAtTop: (window.pageYOffset > 50) ? false : true }" @scroll.window="scrollAtTop = (window.pageYOffset > 50) ? false : true" class="bg-primary-blue md:bg-sc-white sticky top-0 z-50 transition-all" :class="{ 'md:bg-primary-blue' : !scrollAtTop }">
+        <nav x-data="{ isOpen: false, scrollAtTop: (window.pageYOffset > 50) ? false : true }" @scroll.window="scrollAtTop = (window.pageYOffset > 50) ? false : true" class="bg-primary-blue md:bg-sc-white sticky top-0 z-50 transition-all opacity-0 duration-300" :class="{ 'md:bg-primary-blue' : !scrollAtTop }" x-intersect="$el.classList.add('opacity-100')">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="flex justify-between h-16">
                     <!-- Logo -->
@@ -101,7 +104,7 @@
         </nav>
 
         <!-- Hero section -->
-        <section>
+        <section class="opacity-0 duration-1000" x-intersect="$el.classList.add('opacity-100')">
             <div class="relative bg-sc-white overflow-hidden">
                 <div class="relative flex align-center justify-start pt-6 pb-2 mx-auto max-w-7xl lg:max-w-5xl">
                     <main class="mt-6 px-2 sm:px-8 sm:mt-6 w-full">
@@ -133,7 +136,7 @@
         </section>
 
         <!-- Articles section -->
-        <section>
+        <section class="opacity-0 duration-1000" x-intersect="$el.classList.add('opacity-100')">
             <div class="bg-white pt-0 pb-20 px-4 sm:px-6 lg:pb-28">
                 <div class="relative left-0 w-full max-w-xl mx-auto divide-y-2 divide-gray-200 sm:max-w-1.5xl md:max-w-4xl lg:max-w-4xl">
                     <div></div>
@@ -219,7 +222,7 @@
         </section>
 
         <!-- Footer section -->
-        <footer class="bg-footer-bg" aria-labelledby="footer-heading">
+        <footer class="bg-footer-bg opacity-0 duration-1000" aria-labelledby="footer-heading" x-intersect="$el.classList.add('opacity-100')">
             <h2 id="footer-heading" class="sr-only">Footer</h2>
 
             <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">

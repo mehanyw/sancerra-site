@@ -6,12 +6,15 @@
         <title>Sancerra | Contact</title>
         <link rel="icon" type="image/x-icon" href="./favicon.ico" />
         <link href="./dist/styles.css" rel="stylesheet" />
+        <!-- Alpine Plugins -->
+        <script defer src="https://unpkg.com/@alpinejs/intersect@3.x.x/dist/cdn.min.js"></script>
+        <!-- Alpine Core -->
         <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
     </head>
 
-    <body>
+    <body x-data>
         <!-- Nav section -->
-        <nav x-data="{ isOpen: false, scrollAtTop: (window.pageYOffset > 50) ? false : true }" @scroll.window="scrollAtTop = (window.pageYOffset > 50) ? false : true" class="bg-primary-blue md:bg-sc-white sticky top-0 z-50 transition-all" :class="{ 'md:bg-primary-blue' : !scrollAtTop }">
+        <nav x-data="{ isOpen: false, scrollAtTop: (window.pageYOffset > 50) ? false : true }" @scroll.window="scrollAtTop = (window.pageYOffset > 50) ? false : true" class="bg-primary-blue md:bg-sc-white sticky top-0 z-50 transition-all opacity-0 duration-300" :class="{ 'md:bg-primary-blue' : !scrollAtTop }" x-intersect="$el.classList.add('opacity-100')">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="flex justify-between h-16">
                     <!-- Logo -->
@@ -101,7 +104,7 @@
         </nav>
 
         <!-- Contact section -->
-        <section>
+        <section class="opacity-0 duration-1000" x-intersect="$el.classList.add('opacity-100')">
             <div class="relative pt-0 md:pt-8 pb-32 overflow-hidden">
                 <div class="relative">
                     <div class="pl-0 grid md:pr-12 md:grid md:grid-cols-3 md:gap-14">
@@ -174,7 +177,7 @@
         </section>
 
         <!-- Footer section -->
-        <footer class="bg-footer-bg" aria-labelledby="footer-heading">
+        <footer class="bg-footer-bg opacity-0 duration-1000" aria-labelledby="footer-heading" x-intersect="$el.classList.add('opacity-100')">
             <h2 id="footer-heading" class="sr-only">Footer</h2>
 
             <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
