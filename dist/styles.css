@@ -646,26 +646,6 @@ h1,
   --tw-backdrop-sepia:  ;
 }
 
-.aspect-w-3 {
-  position: relative;
-  padding-bottom: calc(var(--tw-aspect-h) / var(--tw-aspect-w) * 100%);
-  --tw-aspect-w: 3;
-}
-
-.aspect-w-3 > * {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-}
-
-.aspect-h-3 {
-  --tw-aspect-h: 3;
-}
-
 .sr-only {
   position: absolute;
   width: 1px;
@@ -891,16 +871,24 @@ h1,
   height: auto;
 }
 
-.h-0 {
-  height: 0px;
-}
-
 .h-5 {
   height: 1.25rem;
 }
 
+.h-18 {
+  height: 4.5rem;
+}
+
+.h-40 {
+  height: 10rem;
+}
+
 .max-h-12 {
   max-height: 3rem;
+}
+
+.max-h-48 {
+  max-height: 12rem;
 }
 
 .min-h-full {
@@ -935,18 +923,18 @@ h1,
   max-width: 36rem;
 }
 
+.max-w-max {
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
+}
+
 .max-w-lg {
   max-width: 32rem;
 }
 
 .max-w-2xl {
   max-width: 42rem;
-}
-
-.max-w-max {
-  max-width: -webkit-max-content;
-  max-width: -moz-max-content;
-  max-width: max-content;
 }
 
 .flex-shrink-0 {
@@ -1574,11 +1562,6 @@ h1,
   opacity: 1;
 }
 
-.focus\:border-indigo-500:focus {
-  --tw-border-opacity: 1;
-  border-color: rgb(99 102 241 / var(--tw-border-opacity));
-}
-
 .focus\:border-primary-blue:focus {
   --tw-border-opacity: 1;
   border-color: rgb(48 71 94 / var(--tw-border-opacity));
@@ -1597,37 +1580,12 @@ h1,
   outline-offset: 2px;
 }
 
-.focus\:ring-indigo-500:focus {
-  --tw-ring-opacity: 1;
-  --tw-ring-color: rgb(99 102 241 / var(--tw-ring-opacity));
-}
-
 .focus\:ring-primary-blue:focus {
   --tw-ring-opacity: 1;
   --tw-ring-color: rgb(48 71 94 / var(--tw-ring-opacity));
 }
 
 @media (min-width: 640px) {
-  .sm\:aspect-w-3 {
-    position: relative;
-    padding-bottom: calc(var(--tw-aspect-h) / var(--tw-aspect-w) * 100%);
-    --tw-aspect-w: 3;
-  }
-
-  .sm\:aspect-w-3 > * {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-  }
-
-  .sm\:aspect-h-4 {
-    --tw-aspect-h: 4;
-  }
-
   .sm\:col-span-2 {
     grid-column: span 2 / span 2;
   }
@@ -1846,16 +1804,12 @@ h1,
     max-width: 56rem;
   }
 
-  .md\:grid-cols-3 {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-
   .md\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .md\:grid-cols-4 {
-    grid-template-columns: repeat(4, minmax(0, 1fr));
+  .md\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .md\:flex-col {
