@@ -199,13 +199,13 @@
         </section>
 
         <!-- Team section -->
-        <section class="opacity-0 duration-700" x-intersect="$el.classList.add('opacity-100')">
+        <section id="team" class="opacity-0 duration-700" x-intersect="$el.classList.add('opacity-100')">
             <div class="bg-sc-gold overflow-hidden relative">
                 <div class="mx-auto py-12 px-4 max-w-7xl sm:px-6 lg:px-8 lg:py-24">
                     <div class="space-y-12">
                         <div class="mb-16">
                             <h2 class="text-center text-xl font-medium tracking-widest text-secondary-blue">MEET THE TEAM</h2>
-                            <p class="max-w-7xl mx-auto text-center mt-2 mb-8 text-base text-primary-blue font-light tracking-wide sm:px-6 sm:max-w-3xl md:max-w-5xl lg:px-8 sm:text-xl lg:text-lg xl:text-xl">With a track record of more than <span class="text-secondary-blue font-medium">175 transactions</span> valued at over <span class="text-secondary-blue font-medium">$10 B</span>, Sancerra is leading the industry through the housing shortage.</p>
+                            <p class="max-w-7xl mx-auto text-center mt-2 mb-8 text-base text-primary-blue font-light tracking-wide sm:px-6 sm:max-w-3xl md:max-w-5xl lg:px-8 sm:text-xl lg:text-lg xl:text-xl">With a track record of more than <span class="text-secondary-blue font-medium">175 transactions</span> valued at over <span class="text-secondary-blue font-medium">$10 billion</span>, Sancerra is leading the industry through the housing shortage.</p>
                         </div>
 
                         <ul role="list" class="space-y-12 px-0 lg:grid lg:grid-cols-1 lg:items-start lg:gap-x-8 lg:gap-y-12 lg:space-y-0 lg:px-18">
@@ -218,7 +218,7 @@
                                         <div class="space-y-4 mt-0 md:mt-2">
                                             <div class="text-lg leading-6 font-medium space-y-1">
                                                 <h3 class="text-primary-blue">Jim Chahine</h3>
-                                                <p class="text-secondary-blue">Managing Partner</p>
+                                                <p class="text-secondary-blue">Managing Partner, CPA</p>
                                             </div>
                                             <div class="text-lg">
                                                 <p class="text-primary-blue font-light tracking-wide">Jim has managed 61 transactions with a market value of over $3.0B. Most recently, he spent 17 years as Chief Operating Officer and Chief Financial Officer for Integral Communities and was a key member of the company's Executive Management team, with direct responsibility for accounting, finance, forecasting, strategic planning, legal, investor relations, acquisitions, dispositions and partnership compliance. Jim has also held leadership positions with Pulte Homes, Ryland Homes, and Ernest & Young, and has served on the Board of Directors for the Make a Wish Foundation and Thomas House Family Shelter. Jim graduated with a BS in Business Administration from the University of Michigan.</p>
@@ -244,7 +244,7 @@
                                         <div class="space-y-4 mt-0 md:mt-2">
                                             <div class="text-lg leading-6 font-medium space-y-1">
                                                 <h3 class="text-primary-blue">Marcus Cook</h3>
-                                                <p class="text-secondary-blue">Managing Partner</p>
+                                                <p class="text-secondary-blue">Managing Partner, CFA</p>
                                             </div>
                                             <div class="text-lg">
                                                 <p class="text-primary-blue font-light tracking-wide">Marcus has managed 37 transactions with a market value of over $2.7B. Marcus spent 7 years as Head of Acquisitions for Irvine Company, where he was responsible for acquisitions, dispositions, due diligence, development planning, market research, and analytics across the company’s 5 product lines. Marcus has also held positions of leadership with Integral Communities, MBK Homes, Larwin Homes, and Bank of America. He serves on the Executive Committee for USC's Lusk Center of Real Estate, and spent 5 years as an adjunct professor for USC's Master of Real Estate Development (MRED) program. Marcus graduated with BS in Business Administration from the University of North Carolina at Chapel Hill and a Master of Real Estate Development from the University of Southern California.</p>
@@ -290,7 +290,7 @@
                             <li>
                                 <div class="space-y-4 sm:grid sm:grid-cols-3 sm:gap-6 sm:space-y-0 lg:gap-8">
                                     <div class="h-0 aspect-w-3 aspect-h-3 sm:aspect-w-3 sm:aspect-h-4">
-                                        <img class="object-cover object-top shadow rounded" src="./src/images/team/adam-smith.jpg" alt="Adam Smith" />
+                                        <img class="object-top shadow rounded" src="./src/images/team/adam-smith.jpg" alt="Adam Smith" />
                                     </div>
                                     <div class="sm:col-span-2">
                                         <div class="space-y-4 mt-0 md:mt-2">
@@ -370,26 +370,27 @@
                 </div>
 
                 <!-- Watermark -->
-                <svg class="absolute bottom-[-28rem] left-0" width="596" height="676" viewBox="0 0 596 676" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg class="absolute bottom-[-28rem] left-0 pointer-events-none" width="596" height="676" viewBox="0 0 596 676" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M297.735 676L0 507.467V429.037H39.2973V484.125L297.735 630.716L556.172 484.125V349.672L297.735 203.081L109.57 309.99L90.1526 275.443L297.735 157.796L595.007 326.329V507.467L297.735 676Z" fill="rgba(48, 71, 94, 0.03)" />
                     <path d="M297.735 518.671L0 349.671V169L297.735 0L595.007 169V239.494H556.172V191.876L297.735 45.2845L39.2973 191.876V326.329L297.735 472.92L478.965 370.212L498.382 404.759L297.735 518.671Z" fill="rgba(48, 71, 94, 0.03)" />
                 </svg>
-                <svg class="absolute top-[-28rem] right-0 hidden lg:block" width="596" height="676" viewBox="0 0 596 676" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg class="absolute top-[-28rem] right-0 hidden lg:block pointer-events-none" width="596" height="676" viewBox="0 0 596 676" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M297.735 676L0 507.467V429.037H39.2973V484.125L297.735 630.716L556.172 484.125V349.672L297.735 203.081L109.57 309.99L90.1526 275.443L297.735 157.796L595.007 326.329V507.467L297.735 676Z" fill="rgba(48, 71, 94, 0.03)" />
                     <path d="M297.735 518.671L0 349.671V169L297.735 0L595.007 169V239.494H556.172V191.876L297.735 45.2845L39.2973 191.876V326.329L297.735 472.92L478.965 370.212L498.382 404.759L297.735 518.671Z" fill="rgba(48, 71, 94, 0.03)" />
                 </svg>
             </div>
         </section>
 
-        <!-- TODO: Company we keep section - 2 -->
+        <!-- Company we keep section - 2 -->
         <section class="opacity-0 duration-700" x-intersect="$el.classList.add('opacity-100')">
             <div class="bg-white">
                 <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
+                    <!-- TODO: Groups of four for md. Delete Cafe bank and CPA-->
                     <h2 class="text-center text-xl font-medium tracking-widest text-secondary-blue">THE COMPANY WE KEEP</h2>
                     <div class="relative py-3 my-3 lg:py-6 lg:mt-9 lg:mb-12 lg:max-w-5xl mx-auto overflow-hidden flex flex-col lg:gap-20" x-data="{ item: 1 }">
                         <!-- Slide 1 -->
                         <div x-show="item === 1">
-                            <div class="mt-6 px-8 grid grid-cols-2 gap-0.5 md:grid-cols-3 lg:grid-cols-4 lg:mt-8">
+                            <div class="mt-6 px-8 grid grid-cols-2 gap-0.5 lg:grid-cols-4 lg:mt-8">
                                 <div class="col-span-1 flex justify-center py-8 px-auto bg-gray-50">
                                     <img class="max-h-12" src="./src/images/partner-logos/lennar-logo.jpeg" alt="Lennar" />
                                 </div>
@@ -407,61 +408,49 @@
 
                         <!-- Slide 2 -->
                         <div x-show="item === 2">
-                            <div class="mt-6 px-8 grid grid-cols-2 gap-0.5 md:grid-cols-3 lg:grid-cols-4 lg:mt-8">
-                                <div class="col-span-1 flex justify-center py-8 px-auto bg-gray-50">
-                                    <img class="max-h-12" src="/src/images/partner-logos/cathay-bank-logo.png" alt="Cathay Bank" />
-                                </div>
+                            <div class="mt-6 px-8 grid grid-cols-2 gap-0.5 lg:grid-cols-4 lg:mt-8">
                                 <div class="col-span-1 flex justify-center py-8 px-auto bg-gray-50">
                                     <img class="max-h-12" src="./src/images/partner-logos/oak-logo.png" alt="Oak Tree" />
                                 </div>
                                 <div class="col-span-1 flex justify-center py-8 px-auto bg-gray-50">
-                                    <img class="max-h-12" src="./src/images/partner-logos/cpa-logo.jpeg" alt="CPA" />
-                                </div>
-                                <div class="col-span-1 flex justify-center py-8 px-auto bg-gray-50">
                                     <img class="max-h-12" src="./src/images/partner-logos/irvine-company-logo.jpeg" alt="Irvine Company" />
                                 </div>
-                            </div>
-                        </div>
-
-                        <!-- Slide 3 -->
-                        <div x-show="item === 3">
-                            <div class="mt-6 px-8 grid grid-cols-2 gap-0.5 md:grid-cols-3 lg:grid-cols-4 lg:mt-8">
                                 <div class="col-span-1 flex justify-center py-8 px-auto bg-gray-50">
                                     <img class="max-h-12" src="./src/images/partner-logos/sares-regis-group.jpeg" alt="Sares Regis Group" />
                                 </div>
                                 <div class="col-span-1 flex justify-center py-8 px-auto bg-gray-50">
                                     <img class="max-h-12" src="./src/images/partner-logos/koll-logo.png" alt="Koll" />
                                 </div>
+                            </div>
+                        </div>
+
+                        <!-- Slide 3 -->
+                        <div x-show="item === 3">
+                            <div class="mt-6 px-8 grid grid-cols-2 gap-0.5 lg:grid-cols-4 lg:mt-8">
                                 <div class="col-span-1 flex justify-center py-8 px-auto bg-gray-50">
                                     <img class="max-h-12" src="./src/images/partner-logos/mbk-homes-logo.png" alt="MBK Homes" />
                                 </div>
                                 <div class="col-span-1 flex justify-center py-8 px-auto bg-gray-50">
                                     <img class="max-h-12" src="./src/images/partner-logos/usc-lusk.png" alt="USC Lusk" />
                                 </div>
-                            </div>
-                        </div>
-
-                        <!-- Slide 4 -->
-                        <div x-show="item === 4">
-                            <div class="mt-6 px-8 grid grid-cols-2 gap-0.5 md:grid-cols-3 lg:grid-cols-4 lg:mt-8">
                                 <div class="col-span-1 flex justify-center py-8 px-auto bg-gray-50">
                                     <img class="max-h-12" src="./src/images/partner-logos/new-home-logo.png" alt="The New Home Company" />
                                 </div>
                                 <div class="col-span-1 flex justify-center py-8 px-auto bg-gray-50">
                                     <img class="max-h-12" src="./src/images/partner-logos/meritage-homes-logo.png" alt="Meritage Homes" />
                                 </div>
+                            </div>
+                        </div>
+
+                        <!-- Slide 4 -->
+                        <div x-show="item === 4">
+                            <div class="mt-6 px-8 grid grid-cols-2 gap-0.5 lg:grid-cols-4 lg:mt-8">
                                 <div class="col-span-1 flex justify-center py-8 px-auto bg-gray-50">
                                     <img class="max-h-12" src="./src/images/partner-logos/google-logo.svg" alt="Google" />
                                 </div>
                                 <div class="col-span-1 flex justify-center py-8 px-auto bg-gray-50">
                                     <img class="max-h-12" src="./src/images/partner-logos/goldman-sachs-logo.png" alt="Goldman Sachs" />
                                 </div>
-                            </div>
-                        </div>
-
-                        <!-- Slide 5 -->
-                        <div x-show="item === 5">
-                            <div class="mt-6 px-8 grid grid-cols-2 gap-0.5 md:grid-cols-3 lg:grid-cols-4 lg:mt-8">
                                 <div class="col-span-1 flex justify-center py-8 px-auto bg-gray-50">
                                     <img class="max-h-12" src="./src/images/partner-logos/arrimus-logo.png" alt="Arrimus" />
                                 </div>
@@ -478,7 +467,7 @@
                                 </svg>
                             </button>
                             <button>
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-primary-blue opacity-80 hover:opacity-100 hover:scale-110 cursor-pointer transition-all" x-on:click="item = item === 5 ? 1 : item + 1" x-init="function carouselTimeOut() { setTimeout(() => {item = item === 5 ? 1 : item + 1; carouselTimeOut(item); }, 8000); }">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-primary-blue opacity-80 hover:opacity-100 hover:scale-110 cursor-pointer transition-all" x-on:click="item = item === 4 ? 1 : item + 1" x-init="function carouselTimeOut() { setTimeout(() => {item = item === 4 ? 1 : item + 1; carouselTimeOut(item); }, 8000); }">
                                     <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
                                 </svg>
                             </button>
@@ -553,7 +542,7 @@
                                 <h3 class="text-base font-medium text-sc-white">LATEST NEWS</h3>
                                 <div class="mt-4">
                                     <p class="text-sm text-gray-400">
-                                        <time datetime="2020-03-16">Jan 03, 2022</time>
+                                        <time datetime="2020-03-16">Jan 03, 2022 &nbsp | &nbsp OC Register</time>
                                     </p>
                                     <a href="https://www.ocregister.com/2022/01/03/single-family-rental-homes-coming-to-riverside-county-defy-california-trend/" class="mt-2 block text-gray-300 hover:text-sc-white">
                                         <p class="text-xl md:text-2xl font-medium">Sancerra is defying California trends for the better</p>
@@ -562,7 +551,7 @@
                                 </div>
                                 <div class="mt-6">
                                     <p class="text-sm text-gray-400">
-                                        <time datetime="2020-03-16">Dec 13, 2021</time>
+                                        <time datetime="2020-03-16">Dec 13, 2021 &nbsp | &nbsp The Real Deal</time>
                                     </p>
                                     <a href="https://therealdeal.com/la/2021/12/13/build-for-rent-community-envisioned-in-inland-empire/" class="mt-2 block text-gray-300 hover:text-sc-white">
                                         <p class="text-xl md:text-2xl font-medium">Wildomar location featured in The Real Deal</p>
