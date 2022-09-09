@@ -871,14 +871,6 @@ h1,
   height: auto;
 }
 
-.h-5 {
-  height: 1.25rem;
-}
-
-.h-18 {
-  height: 4.5rem;
-}
-
 .h-40 {
   height: 10rem;
 }
@@ -1760,10 +1752,6 @@ h1,
     margin-top: 0px;
   }
 
-  .md\:block {
-    display: block;
-  }
-
   .md\:flex {
     display: flex;
   }
@@ -2085,6 +2073,10 @@ h1,
 
   .lg\:gap-4 {
     gap: 1rem;
+  }
+
+  .lg\:gap-2 {
+    gap: 0.5rem;
   }
 
   .lg\:gap-x-8 {
