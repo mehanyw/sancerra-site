@@ -229,29 +229,20 @@
         <section class="opacity-0 duration-700" x-intersect="$el.classList.add('opacity-100')">
             <div class="w-full min-w-full h-auto pt-3 pb-6 bg-sc-gold">
                 <h2 class="my-16 text-center text-xl font-medium tracking-widest text-secondary-blue">PROJECT HIGHLIGHTS</h2>
-                <div class="relative py-3 my-3 lg:py-6 lg:mt-9 lg:mb-12 lg:max-w-5xl mx-auto overflow-hidden flex flex-col lg:gap-20" x-data="{ item: 1 }">
+                <div class="relative py-3 my-3 lg:py-6 lg:mt-9 lg:mb-12 lg:max-w-5xl mx-auto overflow-hidden flex flex-col lg:gap-20 lg:max-h-max lg:h-full" x-data="{ item: 1 }">
                     <!-- Slide 1 -->
-                    <div class="my-8 px-14 lg:px-0 lg:my-16" x-show="item === 1">
-                        <div class="lg:mx-auto lg:max-w-7xl lg:px-12 lg:grid lg:grid-cols-2 lg:grid-flow-col-dense">
-                            <div class="px-4 max-w-xl mx-auto sm:px-6 lg:max-w-none lg:mx-0 lg:px-0 lg:col-start-1">
-                                <div>
-                                    <h2 class="text-xl font-medium tracking-widest text-secondary-blue">POST 24</h2>
-                                    <h2 class="text-md italic font-medium tracking-widest text-secondary-blue">Wildomar, CA</h2>
-
-                                    <!-- Mobile view -->
-                                    <div class="lg:hidden px-0 m-0 mt-5">
-                                        <img class="w-full rounded lg:absolute lg:right-0 lg:h-full lg:w-auto lg:max-w-none" src="./src/images/work-highlight-1.svg" alt="" />
-                                    </div>
-                                    <!-- End mobile view -->
-
-                                    <p class="mt-4 text-lg text-primary-blue font-light">163 Build-for-Rent 2-Story Townhomes.</p>
-                                </div>
+                    <div class="my-8 px-14 lg:px-0" x-show="item === 1">
+                        <div class="items-center justify-center lg:mx-auto lg:max-w-7xl lg:px-12 lg:grid lg:grid-cols-[1fr_2fr] lg:grid-flow-col-dense lg:gap-10">
+                            <div class="px-4 max-w-max mx-auto text-center sm:px-6 lg:mx-0 lg:px-0 lg:col-start-1 lg:text-left">
+                                <h2 class="text-xl font-medium tracking-widest text-secondary-blue">POST 24</h2>
+                                <h2 class="text-md italic font-medium tracking-widest text-secondary-blue">Wildomar, CA</h2>
+                                <p class="mt-4 text-lg text-primary-blue font-light">163 Build-for-Rent 2-Story Townhomes.</p>
                             </div>
 
                             <!-- Desktop image -->
-                            <div class="hidden lg:block mt-12 sm:mt-16 lg:mt-0 lg:col-start-2">
-                                <div class="flex items-center pl-4 -mr-48 sm:pl-6 md:-mr-16 lg:px-0 lg:m-0 lg:relative lg:h-full">
-                                    <img class="w-full h-auto my-auto rounded lg:absolute lg:left-0 lg:h-auto lg:w-full lg:max-w-full" src="./src/images/work-highlight-1.svg" alt="" />
+                            <div class="flex items-center justify-center mt-12 sm:mt-16 lg:mt-0 lg:col-start-2">
+                                <div class="pl-4 sm:pl-6 md:-mr-16 lg:px-0 lg:m-0">
+                                    <img class="w-full max-w-screen-md h-auto my-auto rounded lg:h-auto lg:w-full lg:max-w-full" src="./src/images/work-highlight-1.svg" alt="" />
                                 </div>
                             </div>
                         </div>
