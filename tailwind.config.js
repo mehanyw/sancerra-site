@@ -1,7 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 
 module.exports = {
-  content: ["./*.{html,js}", "./src/**/*.{html,js}"],
+  content: ["./*.{html,js}", "./src/**/*.{html,js}", "./src/**/**/*.{html,js}"],
   theme: {
     extend: {
       colors: {
@@ -21,7 +21,7 @@ module.exports = {
         '3': '3px',        
       },
       backgroundImage: {
-        'footer-bg': "url('../src/images/footer-bg.jpg')",
+        'footer-bg': "url('./images/footer-bg.jpg')",
       },
       spacing: {
         '18': '4.5rem',
