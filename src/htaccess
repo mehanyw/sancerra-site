@@ -1,4 +1,13 @@
 RewriteEngine On 
+
+# Reroute all http to https
 RewriteCond %{SERVER_PORT} 80
 RewriteCond %{HTTP_HOST} ^(www\.)?sancerra\.com
 RewriteRule ^(.*)$ https://www.sancerra.com/$1 [R,L]
+
+# Remove html file extension
+RewriteCond %{THE_REQUEST} /([^.]+)\.html [NC]
+RewriteRule ^ /%1 [NC,L,R]
+
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^ %{REQUEST_URI}.html [NC,L]
