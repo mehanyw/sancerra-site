@@ -159,7 +159,7 @@
 
                                 <!-- Mobile view -->
                                 <div class="lg:hidden px-0 m-0 mt-5">
-                                    <img class="w-full rounded shadow ring-1 ring-sc-black ring-opacity-5 lg:absolute lg:right-0 lg:h-full lg:w-auto lg:max-w-none" src="./images/work-feature-1.jpg" alt="" />
+                                    <img class="image w-full rounded shadow ring-1 ring-sc-black ring-opacity-5 lg:absolute lg:right-0 lg:h-full lg:w-auto lg:max-w-none" src="./images/work-feature-1.jpg" alt="" />
                                 </div>
                                 <!-- End mobile view -->
 
@@ -232,23 +232,54 @@
         <section class="opacity-0 duration-700" x-intersect="$el.classList.add('opacity-100')">
             <div class="w-full min-w-full h-auto pt-3 pb-6 bg-sc-gold">
                 <h2 class="my-16 text-center text-xl font-medium tracking-widest text-secondary-blue">PROJECT HIGHLIGHTS</h2>
-                <div class="relative py-3 my-3 lg:py-6 lg:mt-9 lg:mb-12 lg:max-w-7xl mx-auto overflow-hidden flex flex-col lg:gap-20 lg:max-h-max lg:h-full" x-data="{ item: 1 }">
+                <div class="relative py-3 my-3 lg:py-6 lg:mt-9 lg:mb-12 lg:max-w-7xl mx-auto overflow-hidden flex flex-col lg:gap-20 lg:max-h-max lg:h-full" x-data="{ item: 2 }">
                     <!-- Slide 1 -->
-                    <div class="my-8 px-14 lg:px-0" x-show="item === 1">
+                    <div class="my-8 px-8 lg:px-0" x-show="item === 1">
                         <div class="items-center justify-center lg:mx-auto lg:max-w-7xl lg:px-12 lg:grid lg:grid-cols-[1fr_2fr] lg:grid-flow-col-dense lg:gap-16">
                             <div class="px-4 max-w-max mx-auto text-center sm:px-6 lg:mx-0 lg:px-0 lg:col-start-1 lg:text-left">
                                 <h2 class="text-xl font-medium tracking-widest text-secondary-blue">POST 24</h2>
                                 <h2 class="text-md italic font-medium tracking-widest text-secondary-blue">Wildomar, CA</h2>
-                                <p class="mt-4 text-lg text-primary-blue font-light">163 Build-for-Rent 2-Story Townhomes.</p>
+                                <p class="mt-4 text-lg text-primary-blue font-light">163 Build-for-Rent 2-Story Townhomes</p>
                             </div>
 
-                            <!-- Desktop image -->
+                            <!-- Image -->
                             <div class="flex items-center justify-center mt-12 sm:mt-16 lg:mt-0 lg:col-start-2">
-                                <div class="pl-4 lg:px-0 lg:m-0">
-                                    <img class="w-full max-w-screen-md h-auto my-auto rounded lg:h-auto lg:w-full lg:max-w-full" src="./images/camelia-townhomes-elevation.png" alt="" />
+                                <div class="px-0 lg:m-0">
+                                    <img class="w-full max-w-screen-md h-auto my-auto rounded lg:h-auto lg:w-full lg:max-w-full" src="./images/post-24.jpeg" alt="" />
                                 </div>
                             </div>
                         </div>
+                    </div>
+
+                    <!-- Slide 2 -->
+                    <div class="my-8 px-8 lg:px-0" x-show="item === 2">
+                        <div class="items-center justify-center lg:mx-auto lg:max-w-7xl lg:px-12 lg:grid lg:grid-cols-[1fr_2fr] lg:grid-flow-col-dense lg:gap-16">
+                            <div class="px-4 max-w-max mx-auto text-center sm:px-6 lg:mx-0 lg:px-0 lg:col-start-1 lg:text-left">
+                                <h2 class="text-xl font-medium tracking-widest text-secondary-blue">POST 24</h2>
+                                <h2 class="text-md italic font-medium tracking-widest text-secondary-blue">Wildomar, CA</h2>
+                                <p class="mt-4 text-lg text-primary-blue font-light">163 Build-for-Rent 2-Story Townhomes</p>
+                            </div>
+
+                            <!-- Image -->
+                            <div class="flex items-center justify-center mt-12 sm:mt-16 lg:mt-0 lg:col-start-2">
+                                <div class="px-0 lg:m-0">
+                                    <img class="w-full max-w-screen-md h-auto my-auto rounded lg:h-auto lg:w-full lg:max-w-full" src="./images/post-24-aerial.jpg" alt="" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex justify-between absolute top-1/2 w-full px-10 md:px-20 lg:px-0">
+                        <button>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-primary-blue opacity-80 hover:opacity-100 hover:scale-110 cursor-pointer transition-all" x-on:click="item = item === 1 ? 2 : item - 1">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+                            </svg>
+                        </button>
+                        <button>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-primary-blue opacity-80 hover:opacity-100 hover:scale-110 cursor-pointer transition-all" x-on:click="item = item === 2 ? 1 : item + 1" x-init="function carouselTimeOut() { setTimeout(() => {item = item === 2 ? 1 : item + 1; carouselTimeOut(item); }, 8000); }">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                            </svg>
+                        </button>
                     </div>
                 </div>
             </div>
