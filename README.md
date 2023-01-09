@@ -74,7 +74,7 @@ There are 2 steps needed to deploy this website: locally and remotely (on GoDadd
     ![Website Screenshot](readme/public-html.png)
  5. Upload the .zip file
     ![Website Screenshot](readme/file-upload.png)
- 6. Delete all the old files (except for .htaccess) and extract the .zip file in public_html.
+ 6. Extract the .zip file in public_html. This will automatically override old files.
 	> DON'T touch the .htaccess file. It ensures that all traffic to the website is secure and it removes the *".html"* from the url
     ![Website Screenshot](readme/extract.png)
 7. Test the website and make sure all the links work
