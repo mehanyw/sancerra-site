@@ -71,7 +71,7 @@ There are 2 steps needed to deploy this website: locally and remotely (on GoDadd
  3. Navigate to ***File Manager***
     ![Website Screenshot](readme/file-manager.png)
  4. On the left, click ***public_html***
-    ![Website Screenshot](public-html.png)
+    ![Website Screenshot](readme/public-html.png)
  5. Upload the .zip file
     ![Website Screenshot](readme/file-upload.png)
  6. Delete all the old files (except for .htaccess) and extract the .zip file in public_html.
