@@ -14,6 +14,7 @@
  - HTML
  - Tailwind CSS (https://tailwindcss.com/docs/installation)
  - Alpine JS (https://alpinejs.dev/start-here)
+ - Node.js
 
 **Development**
  - Webpack (https://webpack.js.org/concepts/)
