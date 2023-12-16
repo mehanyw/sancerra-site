@@ -2039,10 +2039,6 @@ h1,
     max-height: max-content;
   }
 
-  .lg\:min-h-\[650px\] {
-    min-height: 650px;
-  }
-
   .lg\:w-auto {
     width: auto;
   }
